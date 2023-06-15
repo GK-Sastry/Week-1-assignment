@@ -7,6 +7,11 @@
 */
 
 function isPalindrome(str) {
+  var n=str.length;
+  for(var i=0 ;i<=(str.length)/2;i++){
+    if(str[i]!=str[n-1-i]) return false;
+    if(str[i]==str[n-1-i]) continue;
+  }
   return true;
 }
 
